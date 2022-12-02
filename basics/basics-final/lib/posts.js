@@ -21,6 +21,8 @@ export function getSortedPostsData() {
     const matterResult = matter(fileContents);
 
     // Combine the data with the id // three dot is copy object
+    // id is filename 1. pre-redering 2.ssg-ssr
+    console.log('posts.js matterResult', matterResult);
     return {
       id,
       ...matterResult.data,
